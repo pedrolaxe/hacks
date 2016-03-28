@@ -1,6 +1,15 @@
 #-*- coding: utf-8 -*-
 #Data: 22/07 22:17
 #Pedro Laxe
+from termcolor import colored
+
+print colored(" __     __   _  _  ____  ___  ____  _  _  ____  ____","red");
+print colored("(  )   / _\ ( \/ )(  __)/ __)(  _ \( \/ )(  _ \(_  _)","red");
+print colored("/ (_/\/    \ )  (  ) _)( (__  )   / )  /  ) __/  )(","red");
+print colored("\____/\_/\_/(_/\_)(____)\___)(__\_)(__/  (__)   (__)","red");
+print "\n\n"
+encriptarvar = raw_input("Digite algo para Encriptar: ");
+
 chaves = [
 'a', 'A',
 'b', 'B',
@@ -129,5 +138,8 @@ def laxeDecrypt(string):
 	print (decryp)
 
 #testes
-laxeCrypt("teste")
+if encriptarvar !=0:
+	print laxeCrypt(encriptarvar)
+else:
+	print "digite algo!"
 #laxeDecrypt("08oo02eg01jw09cc01jw03bo01hp03fp09cc05xx09oq02eg08oo01hp03fp05xx02eg01ee01jw")
