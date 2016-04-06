@@ -1,5 +1,8 @@
 #-*- coding: utf-8 -*-
-#Pedro Laxe
+#
+# Laxecrypt
+# Version: 1.0.1
+# Author: Pedro Laxe <pedro@phpsec.com.br>
 from termcolor import colored
 
 print colored(" __     __   _  _  ____  ___  ____  _  _  ____  ____","red");
