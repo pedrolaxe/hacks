@@ -1,5 +1,4 @@
 #-*- coding: utf-8 -*-
-#Data: 22/07 22:17
 #Pedro Laxe
 from termcolor import colored
 
@@ -108,7 +107,7 @@ cchaves = [
 encryp = ''
 decryp = ''
 
-#Funções
+#Functions
 
 def laxeCrypt(string):
 
@@ -143,11 +142,10 @@ def laxeDecrypt(string):
 
 	return (decryp)
 
-#testes
+#results
 if escolha ==1:
 	print "Resultado: ",laxeCrypt(encriptarvar)
 elif escolha == 2:
 	print "Resultado: ",laxeDecrypt(decriptarvar)
 else:
 	print "Opção Inválida!"
-#laxeDecrypt("08oo02eg01jw09cc01jw03bo01hp03fp09cc05xx09oq02eg08oo01hp03fp05xx02eg01ee01jw")
