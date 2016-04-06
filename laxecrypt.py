@@ -8,8 +8,14 @@ print colored("(  )   / _\ ( \/ )(  __)/ __)(  _ \( \/ )(  _ \(_  _)","red");
 print colored("/ (_/\/    \ )  (  ) _)( (__  )   / )  /  ) __/  )(","red");
 print colored("\____/\_/\_/(_/\_)(____)\___)(__\_)(__/  (__)   (__)","red");
 print "\n\n"
-encriptarvar = raw_input("Digite algo para Encriptar: ");
 
+print "1 - Encriptar\n"
+print "2 - Decriptar\n"
+escolha = int(raw_input("Digite uma opção: "))
+if escolha == 1:
+	encriptarvar = raw_input("Digite algo para Encriptar: ");
+elif escolha == 2:
+	decriptarvar = raw_input("Digite algo para Decriptar: ");
 chaves = [
 'a', 'A',
 'b', 'B',
@@ -116,7 +122,7 @@ def laxeCrypt(string):
 
 		encryp = encryp + cchaves[sid]
 
-	print (encryp)
+	return (encryp)
 
 def laxeDecrypt(string):
 	global chaves
@@ -135,11 +141,13 @@ def laxeDecrypt(string):
 		did = cchaves.index(decSet)
 		decryp = decryp + chaves[did]
 
-	print (decryp)
+	return (decryp)
 
 #testes
-if encriptarvar !=0:
-	print laxeCrypt(encriptarvar)
+if escolha ==1:
+	print "Resultado: ",laxeCrypt(encriptarvar)
+elif escolha == 2:
+	print "Resultado: ",laxeDecrypt(decriptarvar)
 else:
-	print "digite algo!"
+	print "Opção Inválida!"
 #laxeDecrypt("08oo02eg01jw09cc01jw03bo01hp03fp09cc05xx09oq02eg08oo01hp03fp05xx02eg01ee01jw")
