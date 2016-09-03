@@ -1,19 +1,17 @@
+#!/usr/bin/python
 #-*- coding: utf-8 -*-
-#
-# Laxecrypt
-# Version: 1.0.1
-# Author: Pedro Laxe <pedro@phpsec.com.br>
-from termcolor import colored
 
-print colored(" __     __   _  _  ____  ___  ____  _  _  ____  ____","red");
-print colored("(  )   / _\ ( \/ )(  __)/ __)(  _ \( \/ )(  _ \(_  _)","red");
-print colored("/ (_/\/    \ )  (  ) _)( (__  )   / )  /  ) __/  )(","red");
-print colored("\____/\_/\_/(_/\_)(____)\___)(__\_)(__/  (__)   (__)","red");
+print " __     __   _  _  ____  ___  ____  _  _  ____  ____"
+print "(  )   / _\ ( \/ )(  __)/ __)(  _ \( \/ )(  _ \(_  _)"
+print "/ (_/\/    \ )  (  ) _)( (__  )   / )  /  ) __/  )("
+print "\____/\_/\_/(_/\_)(____)\___)(__\_)(__/  (__)   (__)\n"
+print "Version: 1.0.2"
+print "Author: Pedro Laxe <pedro@phpsec.com.br>"
 print "\n\n"
 
 print "1 - Encriptar\n"
 print "2 - Decriptar\n"
-escolha = int(raw_input("Digite uma opção: "))
+escolha = int(input("Digite uma opção: "))
 if escolha == 1:
 	encriptarvar = raw_input("Digite algo para Encriptar: ");
 elif escolha == 2:
@@ -60,7 +58,10 @@ chaves = [
 '7',
 '8',
 '9',
-'0'
+'0',
+' ',
+'@',
+'.'
 ]
 cchaves = [
 '01jw', '01Jw',
@@ -104,7 +105,10 @@ cchaves = [
 '07kl',
 '08hj',
 '09uu',
-'01oo'
+'01oo',
+'09pp',
+'03pl',
+'09lp'
 ]
 
 encryp = ''
@@ -146,7 +150,7 @@ def laxeDecrypt(string):
 	return (decryp)
 
 #results
-if escolha ==1:
+if escolha == 1:
 	print "Resultado: ",laxeCrypt(encriptarvar)
 elif escolha == 2:
 	print "Resultado: ",laxeDecrypt(decriptarvar)
