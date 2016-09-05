@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
 import requests
 
 print "/******"
@@ -29,7 +28,7 @@ def searchfb(email):
         print "Potential Facebook profile -> %s" %url
     else:
         busca = "https://www.facebook.com/search/top/?q=%s" %email
-        print "Facebook não encontrado, tente na busca: %s" %busca
+        print "Facebook not found, try the search: %s" %busca
 
 def searchtw(email):
     n = email.find('@')
