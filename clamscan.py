@@ -6,15 +6,17 @@ import sys
 print "\n"
 print "CLAMSCAN SCRIPT"
 print "Author: Pedro Laxe"
-print "Usage: ./clamscan.py PATH_TO_SCAN PATH_TO_VIRUS"
+print "Usage: ./clamscan.py -p PATH_TO_SCAN  -v PATH_TO_VIRUS"
 print "\n"
 
-if len(sys.argv) == 2:
-    caminho = str(sys.argv[1])
+if len(sys.argv) == 4:
+    caminho = str(sys.argv[2])
+    print "[+] Start scanning...\n"
     os.system("clamscan -r "+caminho)
-elif len(sys.argv) == 3:
-    caminho = str(sys.argv[1])
-    pathvirus = sys.argv[2]
+elif len(sys.argv) == 5:
+    caminho = str(sys.argv[2])
+    pathvirus = sys.argv[4]
+    print "[+] Start scanning...\n"
     os.system("clamscan -r "+caminho+" --move="+pathvirus)
 elif len(sys.argv) == 1:
     print "Faltam Argumentos"
