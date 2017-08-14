@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+# -*- coding: utf-8 -*-
 import sys
 import re
 import time
@@ -20,22 +20,26 @@ def slowprint(s):
     for c in s + '\n':
         sys.stdout.write(c)
         sys.stdout.flush()
-        time.sleep(8./280)
+        time.sleep(8./800)
 
 print "\n\n"
 
-slowprint (C+"\t                 ******     ******      "+O)
-slowprint (C+"\t              **********   **********    "+O)
-slowprint (C+"\t            ************* *************  "+O)
-slowprint (C+"\t           ***************************** "+O)
-slowprint (C+"\t           ***************************** "+O)
-slowprint (C+"\t           ***************************** "+O)
-slowprint (C+"\t            ***************************  "+O)
-slowprint (C+"\t              ***********************    "+O)
-slowprint (C+"\t                *******************      "+O)
-slowprint (C+"\t                  ***************        "+O)
-slowprint (C+"\t                    ***********          "+O)
-slowprint (C+"\t                      *******            "+O)
-slowprint (C+"\t                        ***               "+O)
-slowprint (C+"\t                         *                "+O)
+slowprint (P+"\t                 ******     ******      "+O)
+slowprint (P+"\t              **********   **********    "+O)
+slowprint (P+"\t            ************* *************  "+O)
+slowprint (P+"\t           ***************************** "+O)
+slowprint (P+"\t           ***************************** "+O)
+slowprint (P+"\t           ***************************** "+O)
+slowprint (P+"\t            ***************************  "+O)
+slowprint (P+"\t              ***********************    "+O)
+slowprint (P+"\t                *******************      "+O)
+slowprint (P+"\t                  ***************        "+O)
+slowprint (P+"\t                    ***********          "+O)
+slowprint (P+"\t                      *******            "+O)
+slowprint (P+"\t                        ***               "+O)
+slowprint (P+"\t                         *                "+O)
+print "\n\n"
+slowprint (O+"\t                    AI CAMILA...          "+O)
+slowprint (O+"\t                    VOCÊ É TÃO...          "+O)
+slowprint (O+"\t                      LINDA!               "+O)
 print "\n\n"
